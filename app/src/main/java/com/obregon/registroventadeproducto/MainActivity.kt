@@ -1,4 +1,5 @@
-package com.obregon.registroventadeproducto
+package com.android.registroventadeproducto
+
 
 import android.app.ProgressDialog
 import android.content.Intent
@@ -9,13 +10,11 @@ import android.view.View
 import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import com.obregon.registroventadeproducto.R
 import kotlin.properties.Delegates
 
-
 class MainActivity : AppCompatActivity() {
-
     private val TAG = "LoginActivity"
-
     //global variables
     private var email by Delegates.notNull<String>()
     private var password by Delegates.notNull<String>()
@@ -23,10 +22,12 @@ class MainActivity : AppCompatActivity() {
     private lateinit var etPassword: EditText
     private lateinit var mProgressBar: ProgressDialog
 
+    //Creamos nuestra variable de autenticación firebase
     private lateinit var mAuth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        initialice()
     }
 
     private fun initialice() {
@@ -37,7 +38,8 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun loginUser() {
+    private fun loginUser()
+    {
         //Obtenemos usuario y contraseña
         email = etEmail.text.toString()
         password = etPassword.text.toString()
@@ -58,22 +60,19 @@ class MainActivity : AppCompatActivity() {
                         goHome() // Creamos nuestro método en la parte de abajo
                     } else {
                         // sino le avisamos el usuairo que orcurrio un problema
-                        Toast.makeText(
-                            this, "Authentication failed.",
-                            Toast.LENGTH_SHORT
-                        ).show()
+                        Toast.makeText(this, "Authentication failed.",
+                            Toast.LENGTH_SHORT).show()
                     }
                 }
         } else {
             Toast.makeText(this, "Enter all details", Toast.LENGTH_SHORT).show()
         }
-
     }
 
     private fun goHome() {
         mProgressBar.hide()
         //Nos vamos a Home
-        val intent = Intent(this, Productos::class.java)
+        val intent = Intent(this, Principal::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         startActivity(intent)
     }
@@ -82,9 +81,9 @@ class MainActivity : AppCompatActivity() {
     fun forgotPassword(view: View) {
 
     }
-
     fun login(view: View) {
         loginUser()
 
     }
+
 }

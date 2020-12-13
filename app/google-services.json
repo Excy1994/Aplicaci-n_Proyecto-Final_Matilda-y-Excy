@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "510337937936",
+    "project_id": "login-firebase-6936a",
+    "storage_bucket": "login-firebase-6936a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510337937936:android:9ca1ec3bbc453d809b5095",
+        "android_client_info": {
+          "package_name": "com.obregon.registrolibro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510337937936-ri8ic3r3hsifq89u538v3uirdnl4sksd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtHmNfewbB1U0rnzsg_Xx8b9s8LomNtg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "510337937936-ri8ic3r3hsifq89u538v3uirdnl4sksd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510337937936:android:1c127cfe2919bbca9b5095",
+        "android_client_info": {
+          "package_name": "com.obregon.registroventadeproducto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510337937936-ri8ic3r3hsifq89u538v3uirdnl4sksd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtHmNfewbB1U0rnzsg_Xx8b9s8LomNtg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "510337937936-ri8ic3r3hsifq89u538v3uirdnl4sksd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

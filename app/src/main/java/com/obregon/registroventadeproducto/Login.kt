@@ -1,19 +1,20 @@
-package com.android.registroventadeproducto
+package com.obregon.registroventadeproducto
 
-
-import androidx.appcompat.app.AppCompatActivity
-<<<<<<< HEAD
+import android.app.ProgressDialog
+import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.obregon.registroventadeproducto.R
 import kotlin.properties.Delegates
 
-class MainActivity : AppCompatActivity() {
+class Login : AppCompatActivity() {
+
     private val TAG = "LoginActivity"
+
     //global variables
     private var email by Delegates.notNull<String>()
     private var password by Delegates.notNull<String>()
@@ -23,9 +24,11 @@ class MainActivity : AppCompatActivity() {
 
     //Creamos nuestra variable de autenticación firebase
     private lateinit var mAuth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         initialice()
     }
 
@@ -34,11 +37,9 @@ class MainActivity : AppCompatActivity() {
         etPassword = findViewById(R.id.etPassword)
         mProgressBar = ProgressDialog(this)
         mAuth = FirebaseAuth.getInstance()
-
     }
 
-    private fun loginUser()
-    {
+    private fun loginUser() {
         //Obtenemos usuario y contraseña
         email = etEmail.text.toString()
         password = etPassword.text.toString()
@@ -59,8 +60,10 @@ class MainActivity : AppCompatActivity() {
                         goHome() // Creamos nuestro método en la parte de abajo
                     } else {
                         // sino le avisamos el usuairo que orcurrio un problema
-                        Toast.makeText(this, "Authentication failed.",
-                            Toast.LENGTH_SHORT).show()
+                        Toast.makeText(
+                            this, "Authentication failed.",
+                            Toast.LENGTH_SHORT
+                        ).show()
                     }
                 }
         } else {
@@ -69,24 +72,24 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun goHome() {
+        //Ocultamos el progress
         mProgressBar.hide()
         //Nos vamos a Home
-        val intent = Intent(this, Principal::class.java)
+        val intent = Intent(this, MainActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         startActivity(intent)
     }
 
-    fun register(view: View) {}
+    fun login(view: View) {
+        loginUser()
+    }
+
     fun forgotPassword(view: View) {
 
     }
-    fun login(view: View) {
-        loginUser()
 
+    fun register(view: View) {
+        startActivity(Intent(this, Productos::class.java))
     }
-=======
-
-class MainActivity : AppCompatActivity() {
->>>>>>> f11031ad8b8c524d8da870424d32244c48233c74
 
 }

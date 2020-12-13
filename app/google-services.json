@@ -1,33 +1,86 @@
 {
   "project_info": {
+<<<<<<< HEAD
     "project_number": "558290563322",
     "project_id": "excy-matilde",
     "storage_bucket": "excy-matilde.appspot.com"
+=======
+    "project_number": "510337937936",
+    "project_id": "login-firebase-6936a",
+    "storage_bucket": "login-firebase-6936a.appspot.com"
+>>>>>>> f11031ad8b8c524d8da870424d32244c48233c74
   },
   "client": [
     {
       "client_info": {
+<<<<<<< HEAD
         "mobilesdk_app_id": "1:558290563322:android:518228d9285484ec5ed943",
         "android_client_info": {
           "package_name": "com.matilde.login"
+=======
+        "mobilesdk_app_id": "1:510337937936:android:9ca1ec3bbc453d809b5095",
+        "android_client_info": {
+          "package_name": "com.obregon.registrolibro"
+>>>>>>> f11031ad8b8c524d8da870424d32244c48233c74
         }
       },
       "oauth_client": [
         {
+<<<<<<< HEAD
           "client_id": "558290563322-8vrank0pto66hdqp3b5a43945q7c97b4.apps.googleusercontent.com",
+=======
+          "client_id": "510337937936-ri8ic3r3hsifq89u538v3uirdnl4sksd.apps.googleusercontent.com",
+>>>>>>> f11031ad8b8c524d8da870424d32244c48233c74
           "client_type": 3
         }
       ],
       "api_key": [
         {
+<<<<<<< HEAD
           "current_key": "AIzaSyCpTt3HgOIdT3pwhGaKJQ9eRHPOGbGAQW0"
+=======
+          "current_key": "AIzaSyCtHmNfewbB1U0rnzsg_Xx8b9s8LomNtg8"
+>>>>>>> f11031ad8b8c524d8da870424d32244c48233c74
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
+<<<<<<< HEAD
               "client_id": "558290563322-8vrank0pto66hdqp3b5a43945q7c97b4.apps.googleusercontent.com",
+=======
+              "client_id": "510337937936-ri8ic3r3hsifq89u538v3uirdnl4sksd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510337937936:android:1c127cfe2919bbca9b5095",
+        "android_client_info": {
+          "package_name": "com.obregon.registroventadeproducto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510337937936-ri8ic3r3hsifq89u538v3uirdnl4sksd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtHmNfewbB1U0rnzsg_Xx8b9s8LomNtg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "510337937936-ri8ic3r3hsifq89u538v3uirdnl4sksd.apps.googleusercontent.com",
+>>>>>>> f11031ad8b8c524d8da870424d32244c48233c74
               "client_type": 3
             }
           ]

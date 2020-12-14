@@ -8,13 +8,13 @@ import android.view.View
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.android.registroventadeproducto.Productos
 import com.google.firebase.auth.FirebaseAuth
 import kotlin.properties.Delegates
 
 class Login : AppCompatActivity() {
 
     private val TAG = "LoginActivity"
-
     //global variables
     private var email by Delegates.notNull<String>()
     private var password by Delegates.notNull<String>()
@@ -80,16 +80,13 @@ class Login : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun login(view: View) {
-        loginUser()
-    }
-
+    //fun register(view: View) {}
     fun forgotPassword(view: View) {
 
     }
+    fun Login(view: View) {
+        loginUser()
 
-    fun register(view: View) {
-        startActivity(Intent(this, Productos::class.java))
     }
 
 }

@@ -8,12 +8,23 @@ import android.text.TextUtils
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
+<<<<<<< HEAD:app/src/main/java/com/obregon/registroventadeproducto/login.kt
 import com.google.firebase.auth.FirebaseAuth
 import kotlin.properties.Delegates
 
 class login : AppCompatActivity() {
 
     private val TAG = "loginActivity"
+=======
+import androidx.appcompat.app.AppCompatActivity
+import com.android.registroventadeproducto.Productos
+import com.google.firebase.auth.FirebaseAuth
+import kotlin.properties.Delegates
+
+class Login : AppCompatActivity() {
+
+    private val TAG = "LoginActivity"
+>>>>>>> 4389a9fab35b2a71912eab9a712554b164b4e64a:app/src/main/java/com/obregon/registroventadeproducto/Login.kt
     //global variables
     private var email by Delegates.notNull<String>()
     private var password by Delegates.notNull<String>()
@@ -76,6 +87,7 @@ class login : AppCompatActivity() {
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         startActivity(intent)
     }
+<<<<<<< HEAD:app/src/main/java/com/obregon/registroventadeproducto/login.kt
     fun login(view: View) {
         loginUser()
     }
@@ -89,6 +101,16 @@ class login : AppCompatActivity() {
 
     fun registro(view: View) {
         startActivity(Intent(this, Registro::class.java))
+=======
+
+    //fun register(view: View) {}
+    fun forgotPassword(view: View) {
+
+    }
+    fun Login(view: View) {
+        loginUser()
+
+>>>>>>> 4389a9fab35b2a71912eab9a712554b164b4e64a:app/src/main/java/com/obregon/registroventadeproducto/Login.kt
     }
 
 }

@@ -1,5 +1,6 @@
-package com.obregon.registroventadeproducto
+package com.android.registroventadeproducto
 
+<<<<<<< HEAD
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -16,6 +17,11 @@ import androidx.room.PrimaryKey
 
 
                     val producto:String) {
+=======
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import com.obregon.registroventadeproducto.R
+>>>>>>> 4389a9fab35b2a71912eab9a712554b164b4e64a
 
     }
 

@@ -10,12 +10,15 @@
     <EditText
         android:id="@+id/etEmail"
         style="@style/viewCustom"
-        android:layout_width="396dp"
+        android:hint="Correo"
+        android:inputType="textPersonName"
+
+        android:layout_width="345dp"
         android:layout_height="40dp"
         android:background="#EDF3F2"
         android:ems="10"
-        android:hint="Correo"
-        android:inputType="textPersonName"
+
+
         android:textColor="#222121"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,26 +30,33 @@
 
     <EditText
         android:id="@+id/etPassword"
-        android:layout_width="398dp"
-        android:layout_height="47dp"
-        android:background="#EDEFFA"
-        android:ems="10"
+        style="@style/viewCustom"
+        android:layout_width="349dp"
+        android:layout_height="51dp"
         android:hint="Contraseña"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+
+
         android:inputType="textPersonName"
+        android:onClick="lanzarClima"
         android:textColor="#131212"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.159" />
+        app:layout_constraintVertical_bias="0.142" />
 
     <Button
         android:id="@+id/btnLogin"
+        style="@style/viewCustom"
+        android:text="INICIAR SESION"
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:background="#BFA3EF"
-        android:text="INICIAR SESION"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
@@ -56,10 +66,13 @@
 
     <Button
         android:id="@+id/create"
+        style="@style/viewCustom"
         android:layout_width="325dp"
         android:layout_height="50dp"
         android:background="#BDA8E4"
-        android:text="CREAR CUENTA"
+        android:text="Crear cuenta"
+
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.457"
@@ -81,4 +94,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.598" />
+
+    <Button
+        android:layout_width="119dp"
+        android:layout_height="92dp"
+        android:onClick="lanzarClima"
+        android:text="Clima"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.879" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,19 +2,18 @@ package com.obregon.registroventadeproducto
 
 import android.app.ProgressDialog
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlin.properties.Delegates
 
-class Login : AppCompatActivity() {
+class login : AppCompatActivity() {
 
-    private val TAG = "LoginActivity"
-
+    private val TAG = "loginActivity"
     //global variables
     private var email by Delegates.notNull<String>()
     private var password by Delegates.notNull<String>()
@@ -27,7 +26,7 @@ class Login : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_login)
 
         initialice()
     }
@@ -60,10 +59,8 @@ class Login : AppCompatActivity() {
                         goHome() // Creamos nuestro método en la parte de abajo
                     } else {
                         // sino le avisamos el usuairo que orcurrio un problema
-                        Toast.makeText(
-                            this, "Authentication failed.",
-                            Toast.LENGTH_SHORT
-                        ).show()
+                        Toast.makeText(this, "Authentication failed.",
+                            Toast.LENGTH_SHORT).show()
                     }
                 }
         } else {
@@ -79,7 +76,6 @@ class Login : AppCompatActivity() {
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         startActivity(intent)
     }
-
     fun login(view: View) {
         loginUser()
     }
@@ -87,9 +83,12 @@ class Login : AppCompatActivity() {
     fun forgotPassword(view: View) {
 
     }
+    fun lanzarproducto(view: View){
+        startActivity(Intent(this, NewProductosActivity::class.java))
+    }
 
-    fun register(view: View) {
-        startActivity(Intent(this, Productos::class.java))
+    fun registro(view: View) {
+        startActivity(Intent(this, Registro::class.java))
     }
 
 }

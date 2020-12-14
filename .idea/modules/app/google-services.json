@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "754392247222",
+    "project_id": "registro-venta-de-producto",
+    "storage_bucket": "registro-venta-de-producto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754392247222:android:d0c50159ed0e37de2baf17",
+        "android_client_info": {
+          "package_name": "com.obregon.registroventadeproducto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754392247222-qi321df5ff8vo3vk78k9groin4t9mvmk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.obregon.registroventadeproducto",
+            "certificate_hash": "7ed5956b79c1a6fc1ce90e9ae741d9bad7525afc"
+          }
+        },
+        {
+          "client_id": "754392247222-roba6cudduj78suup54t867872dln7h4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_ZK9i00c2gZhcwITnxVhvqMjnCI9Vpcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754392247222-roba6cudduj78suup54t867872dln7h4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

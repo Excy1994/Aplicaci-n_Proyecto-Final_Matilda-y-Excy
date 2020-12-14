@@ -1,11 +1,21 @@
 package com.obregon.registroventadeproducto
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
-class Productos : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_productos)
+@Entity(tableName = "productos")
+    class Productos(@PrimaryKey
+               val id:String,
+
+               @ColumnInfo(name = "precio")
+               val precio: String,
+
+                    @ColumnInfo(name = "cantidad")
+                    val cantidad: String,
+
+
+                    val producto:String) {
+
     }
-}
+

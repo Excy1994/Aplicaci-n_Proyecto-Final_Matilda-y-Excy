@@ -1,4 +1,4 @@
 package com.obregon.registroventadeproducto
 
-class MainActivity {
+class Network {
 }

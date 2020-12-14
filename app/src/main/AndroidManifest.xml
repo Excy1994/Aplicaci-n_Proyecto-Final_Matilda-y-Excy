@@ -13,14 +13,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".Clima"></activity>
         <activity android:name=".MainActivity">
+=======
+        <activity android:name=".ForgotPassword"></activity>
+        <activity android:name=".Registro" />
+        <activity android:name=".login">
+>>>>>>> d41b338271968b6bf595d0bf55424da6eeb0060b
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".NewProductosActivity"
+            android:label=".activity_new_productos" />
     </application>
 
 </manifest>
